@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.9 Teléfono"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono peruano (9 dígitos o +51)"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar teléfono" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.10 Dirección postal"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <EditText
+        android:id="@+id/etPostalAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calle, número, distrito y ciudad"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:gravity="top"
+        android:minLines="3"
+        android:maxLines="5"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar dirección" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.11 Texto multilínea"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <EditText
+        android:id="@+id/etMultiline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe un comentario"
+        android:inputType="textCapSentences|textMultiLine"
+        android:gravity="top"
+        android:minLines="4"
+        android:maxLines="8"
+        android:maxLength="500"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/tvCharacterCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 / 500 caracteres" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.12 Hora"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="HH:MM (24 horas)"
+        android:inputType="time"
+        android:maxLength="5" />
+
+    <Button
+        android:id="@+id/btnPickTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elegir hora" />
+
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar hora" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.13 Fecha"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DD/MM/AAAA"
+        android:inputType="date"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elegir fecha" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar fecha" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.14 Número entero"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad (1 a 999)"
+        android:inputType="number"
+        android:maxLength="5" />
+
+    <Button
+        android:id="@+id/btnNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar cantidad" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.15 Número con signo"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <EditText
+        android:id="@+id/etNumberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura (-50 a 60 °C)"
+        android:inputType="numberSigned"
+        android:maxLength="4" />
+
+    <Button
+        android:id="@+id/btnSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar temperatura" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.16 Número decimal"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <EditText
+        android:id="@+id/etNumberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio en soles (p. ej. 12,50)"
+        android:inputType="numberDecimal"
+        android:digits="0123456789,."
+        android:maxLength="12" />
+
+    <Button
+        android:id="@+id/btnDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar precio" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.17 Autocompletado"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actvPais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe un país"
+        android:inputType="textCapWords"
+        android:completionThreshold="1" />
+
+    <Button
+        android:id="@+id/btnCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar país" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.18 Autocompletado múltiple"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/mactvTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Etiquetas separadas por comas"
+        android:inputType="textCapWords"
+        android:completionThreshold="1" />
+
+    <Button
+        android:id="@+id/btnTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar etiquetas" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.19 Opciones con casillas"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <Button
+        android:id="@+id/btnOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elegir herramientas" />
+
+    <TextView
+        android:id="@+id/tvOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ninguna herramienta seleccionada"
+        android:saveEnabled="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1.20 Formulario de registro"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="12dp"
+        android:hint="Nombre"
+        app:helperText="Escribe tu nombre">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="12dp"
+        android:hint="Correo electrónico"
+        app:startIconDrawable="@drawable/ic_email"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="12dp"
+        android:hint="Contraseña"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        android:layout_marginTop="12dp"
+        android:hint="Biografía"
+        app:counterEnabled="true"
+        app:counterMaxLength="200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2"
+            android:maxLines="5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar usuario" />
+</LinearLayout>

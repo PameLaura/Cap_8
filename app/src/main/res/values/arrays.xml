@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries_array">
+        <item>Perú</item>
+        <item>Chile</item>
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Colombia</item>
+        <item>Ecuador</item>
+        <item>México</item>
+    </string-array>
+    <string-array name="tags_array">
+        <item>Android</item>
+        <item>Kotlin</item>
+        <item>Java</item>
+        <item>XML</item>
+        <item>Material</item>
+        <item>View Binding</item>
+    </string-array>
+    <string-array name="tools_array">
+        <item>Android Studio</item>
+        <item>Visual Studio Code</item>
+        <item>IntelliJ IDEA</item>
+        <item>Xcode</item>
+        <item>NetBeans</item>
+    </string-array>
+</resources>

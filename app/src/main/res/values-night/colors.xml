@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="demo_input_text">#A5D6A7</color>
+    <color name="demo_input_hint">#FFB74D</color>
+</resources>

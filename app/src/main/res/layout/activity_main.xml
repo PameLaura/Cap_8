@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Subcapítulo 1.4: TextView -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi Aplicación"
+            android:textSize="24sp"
+            android:textColor="#6200EE"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <!-- Subcapítulo 1.5: Plain Text Básico -->
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu usuario"
+            android:text="rsaquel"
+            android:inputType="text"
+            android:background="@drawable/style_etbg"
+            android:imeOptions="actionDone"
+            android:selectAllOnFocus="true"
+            android:textColorHighlight="#FFB74D"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Subcapítulo 1.5.5: Campo con estilo del video -->
+        <EditText
+            android:id="@+id/etEjemplo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_etbg"
+            android:digits="0123456789 "
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="Ejemplo con estilo: teléfono"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/demo_input_text"
+            android:textColorHighlight="#FFB74D"
+            android:textColorHint="@color/demo_input_hint" />
+
+        <!-- Subcapítulo 1.6: Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Contraseña"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botón para Iniciar Sesión -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Iniciar Sesión"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+        <!-- Subcapítulo 1.7: Password (Numeric) / PIN -->
+        <EditText
+            android:id="@+id/etPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa tu PIN de 4 dígitos"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Subcapítulo 1.8: Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnValidarExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Validar PIN y correo" />
+        <include
+            android:id="@+id/practica"
+            layout="@layout/chapter_practice" />
+    </LinearLayout>
+</ScrollView>
